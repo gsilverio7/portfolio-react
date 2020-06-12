@@ -1,0 +1,107 @@
+.content h1 {
+    margin-top: 40vh;
+    text-align: center;
+}
+
+.description {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn ease-in 7s;  
+    
+}
+
+@keyframes fadeIn {
+
+    0% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+    padding: 1.5vw;
+    animation-name: containerFadeIn;
+    animation-duration: 2.5s;
+}
+
+@keyframes containerFadeIn{
+    0% {opacity: 0}
+    90% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.form{
+    margin-top: 5vh;
+    width: 37.5vw;
+    height: 80vh;
+}
+
+.form input, textarea {
+    width: 90%;
+    height: 10vh;
+    margin-bottom: 2vh;
+    background-color: #10121b;
+    border: 1.5px solid #4dff4d;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.7em;
+    color: #dadada;
+    padding: 15px;
+}
+
+.form textarea {
+    width: 90%;
+    height: 30vh;
+    resize: none;
+}
+
+.form button{
+    width: 90%;
+    height: 8vh;
+    background-color: #a4acc4;
+    border: 1px solid #a4acc4;
+    border-radius: 5px;
+    font-family: 'Share Tech Mono', monospace;
+    color: #10121b;
+    font-size: 0.8em;
+
+    cursor: pointer;
+}
+
+.form button:hover{
+    background-color: #4dff4d;
+    border-color: #4dff4d;
+    transition: 0.5s;
+}
+
+.form button .icon, span{
+    vertical-align: middle;
+}
+
+.info{
+    margin-top: 5vh;
+    width: 37.5vw;
+    height: 80vh;
+}
+
+.info div{
+    height: 25vh;
+    width: 100%;
+    /* border: 2px solid #dadada; */
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* .info .info-icon{
+    float: left;
+} */
+
+.info hr{
+    margin-top: 0;
+}

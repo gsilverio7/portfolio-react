@@ -1,0 +1,112 @@
+.full-portrait{
+    position: relative;
+    /* background-image: url("../../assets/blank-photo.jpg");
+    
+    background-size: cover;
+    
+    background-position: center; */
+
+    border-left: 2px solid #4dff4d;
+
+    border-top-right-radius:  5px;
+    border-bottom-right-radius: 5px;
+
+    width: 35vw;
+    height: 60vh;
+    margin-top: 20vh;
+    margin-left: 1.5vw;
+    cursor: pointer;
+}
+
+.full-portrait:hover{
+    transform: scale(1.04, 1.04);
+    transition: 0.5s;
+}
+
+#layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#layer:hover{
+    background-color: rgba(77, 255, 77, 0.5);
+}
+
+
+
+.imagem-cheia{
+    width: 500px;
+    height: 500px;
+    background-image: url(../../assets/blank-photo.jpg);
+}
+
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+
+    animation-name: fadeInn;
+    animation-duration: 2.5s;
+}
+
+@keyframes fadeInn{
+    0% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.details{
+    margin-top: 20vh;
+    margin-right: 1vw;
+    width: 40vw;
+}
+
+
+.button{
+    width: 40%;
+    background-color: #a4acc4;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5vh;
+    margin-left: 0;
+    cursor: pointer;
+    margin-left: 1vw;
+}
+
+.button a{
+    color: #131520;
+}
+
+.button:hover{    
+    background-color: #4dff4d;
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+}
+
+.details hr{
+    width: 70%;
+}
+
+.details table {
+    border-spacing: 2vh;
+    margin-left: -2vh;
+}
+
+.details table tr :nth-child(1){
+    font-size: 0.9em;
+}
+
+
+.details table{
+    margin-top: 5vh;
+}
+
+.details table td{
+    margin-top: 2.5vh;
+    font-size: 0.8em;
+}
+
+

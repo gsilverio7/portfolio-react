@@ -1,0 +1,131 @@
+.resume-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+    padding: 1.5vw;
+    animation-name: containerFadeIn;
+    animation-duration: 2.5s;
+}
+
+@keyframes containerFadeIn{
+    0% {opacity: 0}
+    90% {opacity: 0}
+    100% {opacity: 1}
+}
+
+#skills{
+    height: 80vh;
+    width: 37.5vw;
+}
+
+#skills hr{
+    width: 50%;
+}
+
+#skills ul{
+    list-style: none;
+    margin-top: 3vh;
+    
+}
+
+#skills ul li{
+    margin-bottom: 1vh;
+}
+
+.icon:hover{
+    transition: 0.5s;
+    color: #4dff4d;
+}
+
+#skills ul li .bar{
+    height: 1.2vh;
+    margin-bottom: 1.5vh;
+    margin-left: 1vw;
+    width: 80%;
+    display: inline-block;
+    
+    background-color: #2e344e;
+    
+}
+
+#skills ul li .html, .css, .js, .bootstrap, .php, .python, .mysql, .sqlite, .react, .nodejs, .psc6{
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to right,#4dff4d 50%,#2e344e 50%);
+    background-size: 200% 100%;
+    background-position: right;
+
+    animation-name: skillBar;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.75s;
+}
+
+#skills ul li .html{
+    width: 80%;
+}
+
+#skills ul li .css{
+    width: 60%;
+}
+
+#skills ul li .bootstrap{
+    width: 55%;
+}
+
+#skills ul li .js{
+    width: 50%;
+}
+
+#skills ul li .php{
+    width: 33%;
+}
+
+#skills ul li .python{
+    width: 30%;
+}
+
+#skills ul li .mysql{
+    width: 15%;
+}
+
+#skills ul li .sqlite{
+    width: 17.5%;
+}
+
+#skills ul li .react{
+    width: 30%;
+}
+
+#skills ul li .nodejs{
+    width: 32.5%;
+}
+
+#skills ul li .psc6{
+    width: 35%;
+}
+
+@keyframes skillBar{
+    0%{background-position: right;}
+    100%{background-position: left;}
+}
+
+#experience{
+    height: 80vh;
+    width: 37.5vw;
+}
+
+#experience hr{
+    width: 50%;
+}
+
+#experience ul{
+    list-style: none;
+}
+
+#experience ul li{
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+    font-size: 0.8em;
+}

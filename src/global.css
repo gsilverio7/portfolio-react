@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box; /* padding anexado a largura e altura. Ex.: Um elemento com 200 pixels 
+                            de largura e 20 de padding terá 160 de largura total, e não 240. */ 
+}
+
+
+body {
+    
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.25vw;
+    background: #10121b;
+
+    position: fixed;
+
+}
+
+@keyframes bg-pulse{
+    0%{}
+    50%{}
+
+}
+
+.nav {
+    position: relative;
+    float: left;
+    width: 20vw;
+    height: 100vh;
+    background-color: #131520;
+    text-align: center;
+    border-right: 2px solid #2e344e;
+    color: #a4acc4;
+}
+
+.nav .photo{
+    width: 85%;
+    
+    border: 2px solid #2e344e;
+
+    border-radius: 360px;
+    padding-bottom: 85%;    
+    background-image: url('../src/assets/eu.jpg');
+    background-size: contain;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* animation-duration: 5s;
+    animation-name: portrait;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+
+}
+
+.nav .photo:hover{
+    border: 2px solid #4dff4d;
+    transition: 0.5s;
+}
+
+/* .photo-anim{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 2px solid #4dff4d;
+    border-radius: 360px;
+
+    animation-duration: 1s;
+    animation-name: portraitIII;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+} */
+
+
+@keyframes portrait {
+    0%{border-color: #2e344e;}
+    80%{border-color: #4dff4d;}
+    90%{border-color: #2e344e;}
+    100%{border-color: #4dff4d;}
+}
+
+
+/* @keyframes portraitII {
+    0%, 100%{ border-right: 2px solid #4dff4d; 
+        border-top: 2px solid rgba(77, 255, 77, 0.75); 
+        border-bottom: 2px solid rgba(77, 255, 77, 0.75)
+    }
+
+    25%{ border-top: 2px solid #4dff4d; 
+        border-right: 2px solid rgba(77, 255, 77, 0.75); 
+        border-left: 2px solid rgba(77, 255, 77, 0.75)
+    }
+
+    50%{ border-left: 2px solid #4dff4d; 
+        border-top: 2px solid rgba(77, 255, 77, 0.75); 
+        border-bottom: 2px solid rgba(77, 255, 77, 0.75)
+    }
+
+    75%{ border-bottom: 2px solid #4dff4d; 
+        border-right: 2px solid rgba(77, 255, 77, 0.75); 
+        border-left: 2px solid rgba(77, 255, 77, 0.75)
+    }
+    
+    
+} */
+
+/* @keyframes portraitIII{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+} */
+
+
+.nav ul {
+    margin-top: 1vw;
+    font-size: 2vw;
+    list-style: none;
+}
+
+/* .li-container{
+    width: 80%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.nav li {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    line-height: 3vw;
+    background: linear-gradient(to right, #4dff4d 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    text-align: center;
+}
+
+.nav li:hover, #selected{
+    color: #2e344e;
+    /* width: 85%; */
+    cursor: pointer;
+    background-position:left bottom;
+    transition:all 0.4s ease-out;
+}
+
+.nav li:hover{
+    opacity: 0.5;
+}
+
+#selected{
+    background-color:  #4dff4d;
+}
+
+a {
+    color: #a4acc4;
+    text-decoration: none;
+}
+
+@keyframes markerSlide{
+    0%{transform: translate(-20vw, 0);}
+    100%{transform: translate(20vw, 0);}
+}
+
+hr {
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    width: 100%;
+    border-top: 2px solid #4dff4d;
+    border-bottom: transparent;
+
+
+    /* animation-name: markerSlide;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+
+
+}
+
+.marker{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    overflow: hidden;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    padding: 5px;
+}
+
+.content {
+    position: relative;
+    float: right;
+    width: 80vw;
+    height: 100vh;
+    color: #a4acc4;
+    padding-left: auto;
+    padding-right: auto;
+    font-size: 2vw;
+}
+
+/* .bg-element{
+    position: absolute;
+    bottom: -10px;
+    width:100%;
+    height: 5px;
+    background-color: #4dff4d;
+
+    animation-duration: 3s;
+    animation-name: anim-bg;
+    animation-direction: normal;
+           
+}
+
+@keyframes anim-bg {
+    from{transform: translate(0px,0px);}
+
+    to{transform: translate(0px,-150vh);}
+}
+
+#sec{
+    background-color: #4dff4d;
+    bottom: -20px;
+    animation-duration: 3.5s;
+} */
+
+/* .bg-pulse{
+    position: absolute;
+    height: 100%;
+    width: 40vw;
+    background: linear-gradient(
+        to right, rgba(77, 255, 77, 0.1), rgba(77, 255, 77, 0.15), rgba(77, 255, 77, 0.2), rgba(77, 255, 77, 0.25), rgba(77, 255, 77, 0.2)
+    );
+    top: 0;
+    z-index: -2;
+    
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0%{transform: translateX(0vw);}
+    100%{transform: translateX(80vw);}
+} */
+
+.bg-marker{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to bottom, 
+    rgba(77, 255, 77, 0.1), rgba(77, 255, 77, 0.08), rgba(77, 255, 77, 0.06), rgba(77, 255, 77, 0.04)
+    );
+    bottom: -10vh;
+
+    animation-name: up;
+    animation-duration: 0.7s;
+    
+}
+
+@keyframes up {
+    from {transform: translateY(0);}
+    to {transform: translateY(-110vh);}
+}
+
+.bg-texture{
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    height: 1px;
+    z-index: -1;
+    background-color: rgba(77, 255, 77, 0.1);
+}
+
+.bg-texture:nth-child(2) {
+    top: 20vh;
+}
+
+.bg-texture:nth-child(3) {
+    top: 30vh;
+}
+
+.bg-texture:nth-child(4) {
+    top: 40vh;
+}
+
+.bg-texture:nth-child(5) {
+    top: 50vh;
+}
+
+.bg-texture:nth-child(6) {
+    top: 60vh;
+}
+
+.bg-texture:nth-child(7) {
+    top: 70vh;
+}
+
+.bg-texture:nth-child(8) {
+    top: 80vh;
+}
+
+.bg-texture:nth-child(9) {
+    top: 90vh;
+}
